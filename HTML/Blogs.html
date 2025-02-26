@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/output.css">
+        <script src="../JS/index.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Blog | Macula Consultants</title>
+ 
+</head>
+
+  <body class="w-full bg-white" onload="loadComponent('navbar', 'navbar.html'); loadComponent('footer', 'Footer.html');">
+    <div id="navbar"></div> <!-- Navbar loads here -->
+
+    <section style="background-image: url(../assets/BlogBg.png);"
+      class=" bg-center bg-cover  px-10 py-10 mb-10  h-60 "
+    >
+      <div class="text-white items-center  text-center ">
+        <h1 class="mb-5 text-6xl font-bold  max-md:text-6xl max-sm:text-4xl">
+          Blogs
+        </h1>
+        <nav aria-label="breadcrumb" class="text-2xl font-[lato] font-bold max-sm:text-3xl">
+          <ol class="flex justify-center">
+            <li><a href="/" class="text-white">Home</a></li>
+            <li class="mx-2">&gt;</li>
+            <li aria-current="page">Blogs</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <main
+      class="flex gap-10 p5 mx-auto my-0 max-w-screen-xl max-md:flex-col max-sm:p-5"
+    >
+      <article class=" p-5  shadow-lg ">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/840ad1375cac3bbc6d930f6e588e6a2c2bc51a55"
+          alt="Blog header"
+          class="w-full rounded-[28px_28px_0_0]"
+        />
+       
+        <div
+          class=" gap-5 pb-5 mb-5 text-center border-b border-solid border-b-gray-400"
+        > 
+         <span
+          class=" h-20 w-fit px-10 py-4 mx-auto mb-20     text-2xl font-bold text-black bg-white rounded-lg"
+          >Strategy</span
+        >
+        
+          <div
+            class="flex gap-2 items-center text-base font-bold text-slate-600"
+          >
+            <i class="ti ti-calendar" aria-hidden="true"></i>
+            <span>January 22, 2025</span>
+          </div>
+        </div>
+
+        <h2 class="my-5 text-3xl font-bold text-black max-sm:text-3xl">
+      5 Principles to grow your business
+    </h2>
+        <div class="text-lg font-[lato] font-bold leading-9 text-stone-700">
+          <p class="mb-5">
+            We have worked with globally & achieved a huge positive vibes.
+            Provide a comprehensive list of common tax deductions available to
+            small business owners It is a long established fact that a reader
+            will be distracted by the readable content of a page when looking at
+            its layout.
+          </p>
+          <p class="mb-5">
+            If you are going to use a passage of Lorem Ipsum, you need to be
+            sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <p class="mb-5">
+            1. Grow your business with relevant financial management. Our
+            experienced consultants provide information and advice.
+          </p>
+          <p class="mb-5">
+            2. Make the most of this chaotic tax season with our expert tax
+            preparation and distribution services. We do all the necessary
+            paperwork.
+          </p>
+          <p class="mb-5">
+            3. Take the hassle out of financial management with our accounting
+            services.
+          </p>
+          <p class="mb-5">
+            4. Manage your payroll efficiently with advanced processing
+            services. From real wages.
+          </p>
+        </div>
+      </article>
+
+      <aside class="flex-1 max-md:w-full">
+        <div class="flex p-5 mb-5 bg-gray-50 rounded-xl">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="flex-1 p-3 text-base rounded border border-gray-300 border-solid"
+          />
+          <button
+            class="px-8 py-4 text-white bg-cyan-800 rounded-none cursor-pointer border-[none]"
+          >
+            <i class="ti ti-search" aria-hidden="true"></i>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+
+        <section
+          class="p-8 mb-5 bg-gray-50 rounded-xl border border-solid border-zinc-200 border-opacity-60"
+        >
+          <h3 class="mb-5 text-2xl font-bold text-gray-900">Recent Posts</h3>
+          <div class="flex gap-4 mb-5">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/418061a2efac30b98a38b8c6ee1edaf6ff5dad3a"
+              alt="Recent post"
+              class="rounded-md h-[75px] w-[75px]"
+            />
+            <div class="flex-1">
+              <time class="mb-1.5 text-sm text-neutral-800 text-opacity-80"
+                >January 22, 2025</time
+              >
+              <h4 class="text-base font-extrabold leading-tight text-gray-900">
+                Determine and get in touch with prospects.
+              </h4>
+            </div>
+          </div>
+          <!-- More recent posts... Similar structure repeated for other posts -->
+        </section>
+
+        <section
+          class="p-8 mb-5 bg-gray-50 rounded-xl border border-solid border-zinc-200 border-opacity-60"
+        >
+          <h3 class="mb-5 text-2xl font-bold text-gray-900">Categories</h3>
+          <div
+            class="flex justify-between px-0 py-2.5 border-t border-solid border-t-zinc-100"
+          >
+            <span class="text-base text-slate-600">Analysis</span>
+            <span class="text-base text-slate-600">(1)</span>
+          </div>
+          <!-- More categories... Similar structure repeated -->
+        </section>
+
+        <section
+          class="p-8 mb-5 bg-gray-50 rounded-xl border border-solid border-zinc-200 border-opacity-60"
+        >
+          <h3 class="mb-5 text-2xl font-bold text-gray-900">Popular Tags</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span
+              class="px-3 py-2 text-sm rounded border border-solid  text-slate-600"
+              >Business</span
+            >
+            <span
+              class="px-3 py-2 text-sm rounded border border-solid  text-slate-600"
+              >Finance</span
+            >
+            <!-- More tags... Similar structure repeated -->
+          </div>
+        </section>
+
+        <section
+          class="p-8 mb-5 bg-gray-50 rounded-xl border border-solid border-zinc-200 border-opacity-60"
+        >
+          <h3 class="mb-5 text-2xl font-bold text-gray-900">Follow Us</h3>
+          <div class="flex gap-2.5">
+             <a href="#" aria-label="Facebook"
+                                class="flex items-center justify-center px-3 w-10 h-10 rounded-xl    ">
+                                <span class="sr-only">Facebook</span>
+                                <i class="fa-brands fa-square-facebook text-[#175884] text-3xl "></i>
+                            </a>
+                            <a href="#" aria-label="Twitter"
+                                class="flex items-center justify-center px-3.5 w-10 h-10 rounded-xl    ">
+                                <span class="sr-only">Twitter</span>
+                                <i class="fa-brands fa-square-twitter text-[#175884] text-3xl "></i>
+                            </a>
+                             
+                            
+                            <a href="#" aria-label="LinkedIn"
+                                class="flex items-center justify-center  w-10 h-10 rounded-xl    ">
+                                <span class="sr-only">LinkedIn</span>
+                            <i class="fa-brands fa-linkedin text-[#175884] text-3xl" ></i>
+                            </a>
+            <!-- More social icons... Similar structure repeated -->
+          </div>
+        </section>
+
+       <section 
+    style="background-image: url(../assets/footer1.jpg);"
+    class="relative h-96 p-8 mb-5 flex items-end bg-center bg-cover bg-cyan-800 rounded-xl border border-solid border-zinc-200 border-opacity-60"
+>
+<div class="bg-black/20 absolute h-full w-full inset-0"></div>
+    <div class="relative text-center text-white w-full pb0">
+        <h3 class="mb-5 text-3xl font-bold relative">Ready To Get Expert Advice</h3>
+        <a
+            href="#"
+            class="inline-block  px-5 py-4 text-xl text-cyan-800 no-underline bg-white rounded-full relative"
+        >
+            Contact Us Now!
+        </a>
+    </div>
+</section>
+
+      </aside>
+    </main>
+
+    <nav class="flex gap-5 justify-center mx-0 my-10" aria-label="Pagination">
+      <button
+        class="flex items-center justify-center text-2xl font-bold rounded-full cursor-pointer h-[51px] w-[51px] bg-cyan-800 text-white"
+        aria-current="page"
+      >
+        1
+      </button>
+      <button
+        class="flex items-center justify-center text-2xl font-bold rounded-full cursor-pointer h-[51px] w-[51px]"
+      >
+        2
+      </button>
+      <button class="flex items-center" aria-label="Next page">
+        <svg
+          width="26"
+          height="16"
+          viewBox="0 0 26 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9L25 9V7L0 7L0 9Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <section class="p-10 mx-auto my-0 max-w-[1200px]">
+      <h2 class="mb-5 text-3xl font-bold">Leave a comment</h2>
+      <form class="flex flex-col gap-5">
+        <textarea
+          placeholder="Write a comment"
+          class="p-3 w-full text-base rounded border border-solid resize-none border-zinc-200 h-[156px]"
+        ></textarea>
+        <div class="flex gap-5 max-sm:flex-col">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="flex-1 p-3 text-base rounded border border-solid border-zinc-200"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="flex-1 p-3 text-base rounded border border-solid border-zinc-200"
+          />
+        </div>
+        <div class="flex gap-2.5 items-center">
+          <input
+            type="checkbox"
+            id="save-info"
+            class="rounded-sm border border-solid border-neutral-500 h-[13px] w-[13px]"
+          />
+          <label for="save-info"
+            >Save my name, email, and website in this browser for the next time
+            I comment.</label
+          >
+        </div>
+        
+          <button class="px-10 py-4 w-fit bg-[#175884] ml-10 text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
+              Post a comment
+            </button>
+      </form>
+    </section>
+
+   <div id="footer"></div> <!-- Footer loads here -->
+  </body>
+</html>

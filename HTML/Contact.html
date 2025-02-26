@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS//output.css">
+      <script src="../JS/index.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Contact Macula Consultants</title>
+</head>
+<body  onload="loadComponent('navbar', 'navbar.html'); loadComponent('footer', 'Footer.html');">
+    <div id="navbar"></div> 
+ <section class="py-16 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="mb-12 text-center text-5xl font-bold">Contact Us</h1>
+
+            <div class="grid gap-6 md:grid-cols-3">
+                <!-- Phone Card -->
+                <div class="group relative overflow-hidden rounded-2xl bg-purple-50 p-8 transition-all hover:shadow-lg">
+                    <div class="flex flex-col items-center gap-4 text-center">
+                        <div class="rounded-full     text-purple-600 transition-all group-hover:scale-110">
+                           <i class="fa-solid fa-phone text-4xl" ></i>
+                        </div>
+                        <a href="tel:+911234567890" class="text-lg font-semibold text-gray-900 hover:text-purple-600">
+                            +91 1234 567890
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Address Card -->
+                <div class="group relative overflow-hidden rounded-2xl bg-blue-50 p-8 transition-all hover:shadow-lg">
+                    <div class="flex flex-col items-center gap-4 text-center">
+                        <div class="rounded-full text-blue-600 transition-all group-hover:scale-110">
+                           <i class="fa-solid fa-location-dot text-4xl"></i>
+                        </div>
+                        <address class="not-italic">
+                            <p class="text-lg font-semibold text-gray-900">Dummy 1234 St.</p>
+                            <p class="text-gray-600">280001 Dehradun, Uttrakhand</p>
+                        </address>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="group relative overflow-hidden rounded-2xl bg-green-50 p-8 transition-all hover:shadow-lg">
+                    <div class="flex flex-col items-center gap-4 text-center">
+                        <div class="rounded-full   p4 text-green-600 transition-all group-hover:scale-110">
+                     <i class="fa-solid fa-envelope text-4xl"></i>
+                        </div>
+                        <a href="mailto:info@maculaconsultant.com" class="text-lg font-semibold text-gray-900 hover:text-green-600">
+                            info@maculaconsultant.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div> 
+</body>
+</html>
