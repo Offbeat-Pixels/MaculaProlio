@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../CSS//output.css" rel="stylesheet" />
+    <script src="../JS/index.js"></script>
+  </head>
+  <body
+    onload="loadComponent('navbar', 'navbar.html'); loadComponent('footer', 'Footer.html');"
+  >
+    <div id="navbar"></div>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lato:wght@700&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body>
+        <header
+          class="bg-cover h-[40vh] bg-center mb-10 text-center"
+          style="background-image: url(../assets/HeroBg.png)"
+        >
+          <h1
+            class="text-6xl pt-5 font-bold tracking-tighter max-md:text-5xl max-sm:text-4xl"
+          >
+            Our Services
+          </h1>
+          <nav
+            aria-label="Breadcrumb"
+            class="text-2xl font-bold max-md:text-xl max-sm:text-base"
+          >
+            <a href="/" class="hover:underline">Home</a>
+            <span class="text-black">&gt;</span>
+            <span class="text-cyan-800">Business Consulting</span>
+          </nav>
+
+          <section class="mt-16 w-full max-sm:mb-10">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1be6ef96a817f37d15de2413c417f2dc3f019fbd"
+              alt="Business consulting meeting"
+              class="block mx-auto my-0 w-full h-auto max-w-[1339px]"
+            />
+          </section>
+        </header>
+        <main class="mt-[30rem] px-36 mx-auto my-0 bg-white max-w-[1600px]">
+          <section>
+            <h2
+              class="mb-8 text-4xl font-bold tracking-tighter max-md:text-3xl max-sm:text-3xl"
+            >
+              Business Consulting Services
+            </h2>
+            <ul
+              class="text-2xl tracking-tight leading-[51.12px] max-md:text-xl max-sm:text-lg max-sm:leading-8"
+            >
+              <li class="mb-5">
+                <strong class="text-cyan-800">Strategic Planning:</strong>
+                Helping organizations define their direction and allocate
+                resources.
+              </li>
+              <li class="mb-5">
+                <strong class="text-cyan-800">Financial Management:</strong>
+                Budgeting, forecasting, and financial analysis.
+              </li>
+              <li class="mb-5">
+                <strong class="text-cyan-800">Operations Management:</strong>
+                Streamlining processes for efficiency.
+              </li>
+              <li class="mb-5">
+                <strong class="text-cyan-800"
+                  >Marketing & Sales Strategies:</strong
+                >
+                Developing plans to enhance sales and brand visibility.
+              </li>
+            </ul>
+          </section>
+
+          <section class="flex gap-10 mt-16 max-md:flex-col">
+            <div class="flex-1">
+              <h2
+                class="mb-8 text-4xl font-bold tracking-tighter max-md:text-3xl max-sm:text-3xl"
+              >
+                Startup Incubation Services
+              </h2>
+              <ul
+                class="text-2xl tracking-tight leading-[51.12px] max-md:text-xl max-sm:text-lg max-sm:leading-8"
+              >
+                <li class="mb-5">
+                  <strong class="text-cyan-800">Mentorship:</strong>
+                  Guidance from experienced entrepreneurs and industry experts.
+                </li>
+                <li class="mb-5">
+                  <strong class="text-cyan-800">Funding Access:</strong>
+                  Connections with investors or seed funding.
+                </li>
+                <li class="mb-5">
+                  <strong class="text-cyan-800"
+                    >Networking Opportunities:</strong
+                  >
+                  Access to a community of peers and stakeholders.
+                </li>
+                <li class="mb-5">
+                  <strong class="text-cyan-800">Resource Sharing:</strong>
+                  Shared office space, administrative support, and tech
+                  resources.
+                </li>
+              </ul>
+            </div>
+            <aside class="flex-[0_0_374px] max-md:flex-none max-md:max-w-full">
+              <!-- <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d70f5509220e7892bb716a9fe96bd116f290a566"
+                    alt="Person working on laptop"
+                    class="w-full h-auto"
+                /> -->
+            </aside>
+          </section>
+        </main>
+      </body>
+    </html>
+
+    <div id="footer"></div>
+    <!-- Footer loads here -->
+  </body>
+</html>
