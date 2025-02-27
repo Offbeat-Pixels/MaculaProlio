@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+  <body onload="loadComponent('navbar', 'Navbar.html'); loadComponent('footer', 'Footer.html');">
+    <div id="navbar"></div>
+    
+<section class="relative w-full h-96  bg-cover bg-no-repeat flex flex-col pt-10 text-black text-center" 
+         style="background-image: url(./assets/HeroBg.png);">
+    <!-- Hero Section -->
+    <div class="relative w-full h-96 flex flex-col pt-10 text-black text-center">
+        <h1 class="text-6xl font-bold max-md:text-6xl max-sm:text-4xl py-2">Services</h1>
+        <nav aria-label="breadcrumb" class="text-2xl font-[lato] font-bold max-sm:text-3xl">
+            <ol class="flex justify-center">
+                <li><a href="/" class="">Home</a></li>
+                <li class="mx-2">&gt;</li>
+                <li aria-current="page" class="text-[#194F75]">Business Consulting</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Hero Section Content -->
+    <section class="max-w-[90rem] px-5 mx-auto flex flex-col md:flex-row items-center  bg-white rounded-2xl   mt-10">
+        <!-- Left Side (Text) -->
+        <article class="w-full md:w-1/2  pt-10 text-left">
+            <h1 class="text-4xl font-bold">Business Consulting Services</h1>
+            <ul class="mt-2 font-[lato] text-xl leading-relaxed">
+                <li><strong class="text-[#194F75]">Strategic Planning</strong>: Helping organizations define their direction and allocate resources.</li>
+                <li><strong class="text-[#194F75]">Financial Management</strong>: Budgeting, forecasting, and financial analysis.</li>
+                <li><strong class="text-[#194F75]">Operations Management</strong>: Streamlining processes for efficiency.</li>
+                <li><strong class="text-[#194F75]">Marketing & Sales Strategies</strong>: Developing plans to enhance sales and brand visibility.</li>
+            </ul>
+   <h2 class="mt20 text-3xl font-bold mt-10">Startup Incubation Services</h2>
+              <ol class="mt-2 text-xl font-[lato] leading-relaxed list-decimal pl-5">
+                <li><strong class="text-[#194F75]">Mentorship</strong>: GuiGuidance from experienced entrepreneurs and industry experts.</li>
+                <li><strong class="text-[#194F75]">Funding Access</strong>: Connections with investors or seed funding.</li>
+                <li><strong class="text-[#194F75]">Networking</strong>: Access to a community of peers and stakeholders.</li>
+                <li class="text-nowrap"><strong class="text-[#194F75]">Resource Sharing</strong>: Shared office space, administrative support, and tech resources. </li>
+              </ol>
+        </article>
+
+        <!-- Right Side (Video) -->
+        <video src="assets/BusinessConsulting.mp4" 
+               class="w-full md:w-1/2 mb-26 rounded-2xl object-contain "
+               controls autoplay loop>
+        </video>
+    </section>
+</section>
+
+
+    <!-- <main class="flex flex-col  mx-auto  max-w-[90rem] px-5 py-10 z-50   mt-32 mb-20 ">
+      <div class="w-full max-w-[1362px]">
+        <section class="mt-16 md:mt-20">
+          <div class="flex flex-col md:flex-row gap-10"> 
+            <article class="w-full md:w-2/3">  
+          
+              <h2 class="mt20 text-3xl font-bold">Startup Incubation Services</h2>
+              <ol class="mt-5 text-xl font-[lato] leading-relaxed list-decimal pl-5">
+                <li><strong class="text-[#194F75]">Mentorship</strong>: GuiGuidance from experienced entrepreneurs and industry experts.</li>
+                <li><strong class="text-[#194F75]">Funding Access</strong>: Connections with investors or seed funding.</li>
+                <li><strong class="text-[#194F75]">Networking</strong>: Access to a community of peers and stakeholders.</li>
+                <li><strong class="text-[#194F75]">Resource Sharing</strong>: Shared office space, administrative support, and tech resources. </li>
+              </ol>
+            </article>
+            
+        
+          </div>
+        </section>
+      </div>
+    </main> -->
+  <section class="mt-[60vh]">
+            <div style="background-image: url(assets/trustBg.png);"
+                class="flex flex-col bg-cover   justify-center items-center    w-full text-white  max-md:px-5 max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-col max-w-full w-full bg-black/50 py-10">
+                    <h2 class="text-5xl font-bold    text-center max-md:max-w-full max-md:text-4xl ">
+                        <p class="mb-4">Trusted by the world's</p>
+
+                        <p>fastest growing business</p>
+                    </h2>
+                    <button
+                        class="px-10 py-4 w-fit bg-[#175884] mt-10 mx-auto text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
+                        Schedule a Call
+                    </button>
+                </div>
+            </div>
+        </section>
+    <div id="footer"></div>
+  </body>
+</html>

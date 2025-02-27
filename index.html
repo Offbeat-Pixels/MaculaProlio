@@ -13,69 +13,60 @@
     <title>Macula Consultants</title>
 </head>
 
-<body>
+<body onload="loadComponent('navbar', 'Navbar.html'); loadComponent('footer', 'Footer.html');">
+        <div id="navbar"></div>
     <div class="flex overflow-hidden flex-col bg-white">
-        <section id="hero" style="background-image: url(/assets/HeroBg.png);" class="bg-cover bg-center h-[95vh] ">
-            <nav
-                class="w-full min-h-fit pr-24 flex items-center justify-between shadow-sm bg-white/50">
-                <img class="w-fit h-20 pl-20 py-2 object-cover" src="assets/logo.png" />
-                <div class="flex gap-10 font-semibold">
-                    <a href="index.html">Home</a>
-                    <a href="AboutUs.html">About Us</a>
-                    <a href="Services.html">Our Service</a>
-                    <a href="Blogs.html">Blog</a>
-                    <a href="Contact.html">Contact Us</a>
-                </div>
-            </nav>
+        <section id="hero" style="background-image: url(/assets/HeroBg.png);" class="bg-cover bg-center h-fit md:h-[90vh] ">
+           
 
 
             <header class="relative py28 text-center w-full   h-full bg-transparent">
 
                 <!-- Main Content -->
-                <h1 class="text-[#175884] text-4xl md:text-6xl  font-semibold mt-10 leading-tighter">
+                <h1 class="text-[#175884] text-4xl lg:text-5xl 2xl:text-6xl  font-semibold mt-10 leading-tighter">
 
-                    <span id="mainHeading" class="px-5">Vision To Venture -</span>Navigating The Journey
+                    <span id="mainHeading" class="md:px-5">Vision To Venture -</span>Navigating The Journey
                 </h1>
                 <!-- <div class="absolute left-[33rem] divide-dotted top-[22.4rem] h-px w-[30rem] bg-black transform rotate-90"></div> -->
 
-                <div class="relative flex flex-wrap  lg:flex-nowrap md:px-10 md:py-10">
+                <div class="relative flex flex-wrap  lg:flex-nowrap md:px-14 md:py-10">
                     <!-- Text Section -->
-                    <div class="lg:w-full flex flex-col pl20 pb-20 justifycenter ">
-                        <div class="space-y-10  mt-10 p-10 text-left font-[lato]">
-                            <p class="text-3xl lg:text-6xl  font-semibold">
+                    <div class="lg:w-full flex flex-col pl14 md:pb-20 justifycenter ">
+                        <div class=" space-y-5 md:space-y-10  2xl:mt-10 p-5 2xl:p-10 text-left font-[lato]">
+                            <p class="text-4xl lg:text-5xl 2xl:text-6xl   font-semibold">
                                 We Understand
                             </p>
-                            <ol class="max-w-[55rem] text-2xl text-justify space-y-4">
+                            <ol class="max-w-[55rem] text-xl md:text-2xl text-justify space-y-4">
                                 <li class="font-semibold flex gap-4  mb-4">
-                                    <svg width="30" height="25" viewBox="0 0 20 25" fill="none">
+                                    <svg width="30" height="30" viewBox="0 -5 20 30" fill="none">
                                         <path d="M8.98551 12.5L0 0L20 12.5L0 25L8.98551 12.5Z" fill="#194F75" />
                                     </svg>The initial surge of sales that
                                     founders experience <br>
                                     often fades due to the harsh reality of scaling.
                                 </li>
                                 <li class="font-semibold flex gap-5  mb-4">
-                                    <svg width="20" height="25" viewBox="0 0 20 25" fill="none">
+                                    <svg width="30" height="30" viewBox="0 -5 20 30" fill="none">
                                         <path d="M8.98551 12.5L0 0L20 12.5L0 25L8.98551 12.5Z" fill="#194F75" />
                                     </svg>
                                     The struggle of working with
                                     ineffective teams.
                                 </li>
                                 <li class="font-semibold flex gap-5  mb-4">
-                                    <svg width="20" height="25" viewBox="0 0 20 25" fill="none">
+                                    <svg width="20" height="30" viewBox="0 -5 20 30" fill="none">
                                         <path d="M8.98551 12.5L0 0L20 12.5L0 25L8.98551 12.5Z" fill="#194F75" />
                                     </svg> The challenge of raising funds.
                                 </li>
 
                             </ol>
                         </div>
-                        <button
-                            class="px-10 py-4 w-fit bg-[#175884] ml-10 text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
+                        <a href="Contact.html" 
+                            class="px-10 py-4 w-fit bg-[#175884] mx-auto md:ml-10 text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
                             Schedule a Call
-                        </button>
+                        </a>
 
                     </div>
                     <!-- <div class="pr-20 "><img src="assets/temp.png" alt="" class="  rounded-3xl"></div> -->
-                    <div class="pr-10 pt-5 "><video src="assets/MaculaFinal.webm" controls autoplay loop
+                    <div class="md:pr-10 pt-10 w-full "><video src="assets/main.mp4" controls autoplay loop
                             class="rounded-3xl"></video></div>
 
                 </div>
@@ -83,9 +74,9 @@
         </section>
 
         <!-- Strategy section -->
-        <section id="strategy" class="mt-10 h-fit">
+        <section id="strategy" class="mt-20 md:mt-0 h- bg-cover bg-center" style="background-image: url(./assets/strategyBg.png);">
             <div
-                class="max-w-[90rem] h-fit mx-auto bg-white p-20 rounded-lg  flex flex-col md:flex-row gap-20 items-center md:items-start">
+                class="max-w-[90rem] h-fit mx-auto p-10  2xl:p-20 rounded-lg  flex flex-col md:flex-row gap-20 items-center md:items-start">
                 <!-- Left: Images Section -->
                 <div class="flex flex-col space-y-4   md:w-1/3">
                     <div class="grid grid-cols-2 gap-4 max-h-72">
@@ -289,9 +280,9 @@
         </section>
 
         <section style="background-image:url(assets/serviceBg.png);"
-            class="flex flex-col bg-cover bg-center items-center mt-20 px-20 pt-16 pb-28 w-full   max-md:px-5  max-md:mt-10 max-md:max-w-full">
+            class="flex flex-col bg-cover bg-center items-center  px-20 pt-16 pb-28 w-full   max-md:px-5  max-md:mt-10 max-md:max-w-full">
             <div class="flex flex-col items-start  mb-0 w-full max-w-7xl max-md:mb-2.5 max-md:max-w-full">
-                <h2 class="text-4xl font-bold   tracking-tight leading-none text-black max-md:max-w-full">
+                <h2 class="text-3xl md:text-4xl font-bold   tracking-tight leading-none text-black max-md:max-w-full">
                     Explore Our Services
                 </h2>
                 <p
@@ -386,7 +377,7 @@
                                             <div
                                                 class="flex flex-col items-center pt-10 pb-4 mx-auto w-full text-base font-bold text-black bg-white rounded-lg max-md:mt-10">
                                                 <h3 class="text-xl leading-4 text-cyan-800">
-                                                    GTM + Sales
+                                                    Sales as a Service
                                                 </h3>
                                                 <p class=" font-[lato] mt-5 text-center  max-md:mt-10">
                                                     We specialize in providing practical
@@ -441,57 +432,7 @@
 
         <section class="flex flex-col  items-center justify-center">
       
-<div class="marquee">
-    <div class="marquee-inner">
-        <span>
-            BUSINESS CONSULTING <span class="text-blue">GTM + SALES</span> GEN AI DRIVEN PRODUCTS
-        </span>
-        <span>
-            BUSINESS CONSULTING <span class="text-blue">GTM + SALES</span> GEN AI DRIVEN PRODUCTS
-        </span>
-    </div>
-</div>
 
-<style>
-    .marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-    background: white; /* Adjust background if needed */
-  }
-
-  .marquee-inner {
-    display: flex;
-    gap: 2rem; /* Adjust spacing */
-    animation: marquee-scroll 10s linear infinite;
-  }
-
-  .marquee-inner span {
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    white-space: nowrap;
-    padding-right: 2rem; /* Space between repeated texts */
-  }
-
-  .text-blue {
-    color: #175884;
-  }
-
-  @keyframes marquee-scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-    }
-</style>
-
-
-
-          
             <div class="justify-center mt-20 w-full max-w-7xl max-md:mt-10 max-md:max-w-full">
                 <div class="flex gap-5 max-md:flex-col">
                     <div class="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
@@ -572,10 +513,10 @@
                     </div>
                 </div>
             </div>
-            <button
+           <a href="Contact.html" 
                 class="px-10 py-4 w-fit bg-[#175884] mt-20 mx-auto text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
                 Schedule a Call
-            </button>
+        </a>
         </section>
         <section>
             <div style="background-image: url(assets/trustBg.png);"
@@ -586,10 +527,10 @@
 
                         <p>fastest growing business</p>
                     </h2>
-                    <button
+                     <a href="Contact.html" 
                         class="px-10 py-4 w-fit bg-[#175884] mt-10 mx-auto text-white text-lg font-medium rounded-full shadow-lg font-[lato]">
                         Schedule a Call
-                    </button>
+                </a>
                 </div>
             </div>
         </section>
@@ -603,7 +544,7 @@
                     Achieve your business dreams with expert guidance.
                 </p>
             </div>
-            <a href="#"
+            <a href="Blogs.html"
                 class="overflow-hidden  self-start px-10 py-4 text-lg     font-[lato] text-white bg-[#175884] rounded-full max-md:px-5">
                 View All
 
@@ -613,23 +554,22 @@
                 View All
             </button> -->
         </div>
-        <div class="self-center mt-14   max-md:mt-10 max-md:max-w-full">
+        <div class="self-center my-14 max-w-[70rem]  2xl:max-w-[95rem]  max-md:mt-10 max-md:max-w-full">
 
-            <div class="flex gap-5  max-md:flex-col">
+            <div class="flex gap-5 justify-center  max-md:flex-col">
                 <div class="flex  flex-col w-3/12 max-md:ml-0 max-md:w-full">
                     <div
-                        class="flex relative flex-col px-4 pt-80 pb-8 w-full text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-[1/1] max-md:pt-24 max-md:mt-7">
+                        class="flex relative flex-col px-4 md:pt-60 2xl:pt-80 pb-8 w-full text-sm 2xl:text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-square max-md:pt-24 max-md:mt-7">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/18545ae72f2bf5899d0e000c27e5f87ed7f9c86edf0ae911810704fce12b901a?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
                             alt="Blog post background" class="object-contain  absolute inset-0 size-full" />
                         <div class="flex relative gap-5 justify-between px-3 py-2 bg-white rounded-2xl">
                             <h3 class="my-auto">
-                                5 Principles to grow
-                                <br />
+                                5 Principles to grow 
                                 your business
                             </h3>
-                            <a href="#" class="bg-[#175884] w-16 rounded-2xl aspect-square items-center p-5"><svg
-                                    width="23" height="25" viewBox="0 0 23 25" fill="none"">
+                            <a href="Blogs.html" class="bg-[#175884] md:w-fit 2xl:w-fit rounded-2xl aspect-square items-center p-3 2xl:p-5"><svg
+                                    width="23" height="25" viewBox="0 0 23 25" fill="none">
                         <path
                             d=" M21.9976 0.930399C21.9591 0.379454 21.4813 -0.0360155 20.9304 0.00242228L11.9522
                                     0.628808C11.4013 0.667245 10.9858 1.14504 11.0243 1.69598C11.0627 2.24693 11.5405
@@ -644,17 +584,17 @@
                 </div>
                 <div class="flex  flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
                     <div
-                        class="flex relative flex-col px-4 pt-80 pb-8 w-full text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-[0.888] max-md:pt-24 max-md:mt-7">
+                        class="flex relative flex-col px-4 md:pt-60 2xl:pt-80 pb-8 w-full text-sm 2xl:text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-square max-md:pt-24 max-md:mt-7">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/18545ae72f2bf5899d0e000c27e5f87ed7f9c86edf0ae911810704fce12b901a?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
                             alt="Blog post background" class="object-contain absolute inset-0 size-full" />
                         <div class="flex relative gap-5 justify-between px-3 py-2 bg-white rounded-2xl">
                             <h3 class="my-auto">
                                 5 Principles to grow
-                                <br />
+                                
                                 your business
                             </h3>
-                            <a href="#" class="bg-[#175884] w-16 rounded-2xl aspect-square items-center p-5"><svg
+                            <a href="Blogs.html" class="bg-[#175884] md:w-fit 2xl:w-fit rounded-2xl aspect-square items-center p-3 2xl:p-5"><svg
                                     width="23" height="25" viewBox="0 0 23 25" fill="none">
                                                     <path
                                                         d=" M21.9976 0.930399C21.9591 0.379454 21.4813 -0.0360155
@@ -669,17 +609,16 @@
                 </div>
                 <div class="flex  flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
                     <div
-                        class="flex relative flex-col px-4 pt-80 pb-8 w-full text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-[0.888] max-md:pt-24 max-md:mt-7">
+                        class="flex relative flex-col px-4 md:pt-60 2xl:pt-80 pb-8 w-full text-sm 2xl:text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-square max-md:pt-24 max-md:mt-7">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/18545ae72f2bf5899d0e000c27e5f87ed7f9c86edf0ae911810704fce12b901a?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
                             alt="Blog post background" class="object-contain absolute inset-0 size-full" />
                         <div class="flex relative gap-5 justify-between px-3 py-2 bg-white rounded-2xl">
                             <h3 class="my-auto">
-                                5 Principles to grow
-                                <br />
+                                5 Principles to grow 
                                 your business
                             </h3>
-                            <a href="#" class="bg-[#175884] w-16 rounded-2xl aspect-square items-center p-5"><svg
+                            <a href="Blogs.html" class="bg-[#175884] md:w-fit 2xl:w-fit rounded-2xl aspect-square items-center p-3 2xl:p-5"><svg
                                     width="23" height="25" viewBox="0 0 23 25" fill="none"">
                                                     <path
                                                         d=" M21.9976 0.930399C21.9591 0.379454 21.4813 -0.0360155
@@ -694,17 +633,16 @@
                 </div>
                 <div class="flex  flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
                     <div
-                        class="flex relative flex-col px-4 pt-80 pb-8 w-full text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-[0.888] max-md:pt-24 max-md:mt-7">
+                        class="flex relative flex-col px-4 md:pt-60 2xl:pt-80 pb-8 w-full text-sm 2xl:text-xl font-bold tracking-normal leading-6 text-black rounded-2xl aspect-square max-md:pt-24 max-md:mt-7">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/18545ae72f2bf5899d0e000c27e5f87ed7f9c86edf0ae911810704fce12b901a?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
                             alt="Blog post background" class="object-contain absolute inset-0 size-full" />
                         <div class="flex relative gap-5 justify-between px-3 py-2 bg-white rounded-2xl">
                             <h3 class="my-auto">
                                 5 Principles to grow
-                                <br />
                                 your business
                             </h3>
-                            <a href="#" class="bg-[#175884] w-16 rounded-2xl aspect-square items-center p-5"><svg
+                            <a href="Blogs.html" class="bg-[#175884] md:w-fit 2xl:w-fit rounded-2xl aspect-square items-center p-3 2xl:p-5"><svg
                                     width="23" height="25" viewBox="0 0 23 25" fill="none"">
                                                     <path
                                                         d=" M21.9976 0.930399C21.9591 0.379454 21.4813 -0.0360155
@@ -719,159 +657,7 @@
                 </div>
             </div>
         </div>
-        <div
-        style="background-image: url(https://cdn.builder.io/api/v1/image/assets/TEMP/0391391615bce237a046497a243f526e5cf339b04ec5670104bfbfda5e574c14?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed);"
-            class="flex bg-no-repeat bg-cover bg-center  relative flex-col items-start px-20 py-36 mt-20 w-full max-h-fit max-md:px-5 max-md:py-24 max-md:mt-10 max-md:max-w-[80rem]">
-          
-            <h2 class="relative text-4xl font-bold text-black">Let's Talk</h2>
-            <form
-                class="flex relative flex-col p-6 mt-10 -mb-6 max-w-7xl bg-white rounded-lg border border-solid  min-w-[320px] w-[749px] max-md:px-5 max-md:mb-2.5">
-                <div
-                    class="flex flex-col w-full text-base leading-snug whitespace-nowrap text-stone-900 max-md:max-w-full">
-                    <label for="name" class="max-md:max-w-full">Name</label>
-                    <input type="text" id="name"
-                        class="flex py-3 mt-2 w-full bg-white rounded-lg border border-solid  min-h-[40px] min-w-[240px] max-md:max-w-full" />
-                </div>
-                <div
-                    class="flex flex-col mt-6 w-full text-base leading-snug whitespace-nowrap text-stone-900 max-md:max-w-full">
-                    <label for="email" class="max-md:max-w-full">Email</label>
-                    <input type="email" id="email"
-                        class="flex py-3 mt-2 w-full bg-white rounded-lg border border-solid  min-h-[40px] min-w-[240px] max-md:max-w-full" />
-                </div>
-                <div class="flex flex-col mt-6 w-full text-base leading-snug text-stone-900 max-md:max-w-full">
-                    <label for="phone" class="max-md:max-w-full">Phone number</label>
-                    <input type="tel" id="phone"
-                        class="flex py-3 mt-2 w-full bg-white rounded-lg border border-solid  min-h-[40px] min-w-[240px] max-md:max-w-full" />
-                </div>
-                <div class="flex flex-col mt-6 w-full max-md:max-w-full">
-                    <label for="message" class="text-base leading-snug text-stone-900 max-md:max-w-full">
-                        Message
-                    </label>
-                    <textarea id="message"
-                        class="flex overflow-hidden items-start py-3 pr-1.5 pl-4 mt-2 w-full bg-white rounded-lg border border-solid  min-h-[80px] min-w-[240px] max-md:max-w-full"></textarea>
-                </div>
-                <div
-                    class="flex gap-4 items-center mt-6 w-full text-base leading-none whitespace-nowrap text-neutral-100 max-md:max-w-full">
-                    <button type="submit"
-                        class="overflow-hidden flex-1 shrink gap-2 self-stretch p-3 my-auto w-full rounded-lg border border-solid bg-zinc-800 border-zinc-800 min-w-[240px] max-md:max-w-full">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-        <div style="background-image: url(https://cdn.builder.io/api/v1/image/assets/TEMP/aed75e4379a1f42c8470a908b9291d44e105b328e85382c301ca5cee8b943444?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed);" class="flex relative  flex-col justify-center py-px w-full min-h-fit max-md:max-w-full">
-         
-            <div
-                class="flex relative flex-col justify-center items-center px-20 py-20 w-full min-h-[952px] max-md:px-5 max-md:max-w-full">
-                <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b338d01270256695ea7caa0e32449f43532b6b7d9b4b42b502ebbca5a64ddc24?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                    alt="Footer overlay" class="object-cover absolute inset-0 size-full" />
-                <div class="flex relative flex-col w-full max-w-7xl max-md:max-w-full">
-                    <h2 class="self-start text-4xl text-[#175884] tracking-tight text-[#175884 leading-[61px] max-md:max-w-full">
-                        <span class="font-bold ">
-                            Turn your vision into reality.
-                        </span>
-                        <br />
-                        <span class="font-bold  ">
-                            Let's reinvent success together!
-                        </span>
-                    </h2>
-                    <nav
-                        class="flex flex-wrap gap-5 justify-between mt-6 w-full text-lg text-black max-md:mt-10 max-md:max-w-full">
-                        <ul class="flex gap-10 my-auto font-medium leading-none max-md:max-w-full">
-                            <li><a href="#" class="grow text-lg leading-snug">Home</a></li>
-                            <li><a href="#">Our Service</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <div class="flex gap-8 leading-none whitespace-nowrap">
-                            <a href="#" aria-label="Facebook"
-                                class="flex items-center justify-center px-3 w-10 h-10 rounded-xl ">
-                                <span class="sr-only">Facebook</span>
-                                <i class="fa-brands fa-square-facebook text-[#175884] text-3xl "></i>
-                            </a>
-                            <a href="#" aria-label="Twitter"
-                                class="flex items-center justify-center px-3.5 w-10 h-10 rounded-xl ">
-                                <span class="sr-only">Twitter</span>
-                                <i class="fa-brands fa-square-twitter text-[#175884] text-3xl "></i>
-                            </a>
-                             
-                            
-                            <a href="#" aria-label="LinkedIn"
-                                class="flex items-center justify-center  w-10 h-10 rounded-xl ">
-                                <span class="sr-only">LinkedIn</span>
-                            <i class="fa-brands fa-linkedin text-[#175884] text-3xl" ></i>
-                            </a>
-                        </div>
-                    </nav>
-                    <div
-                        class="overflow-hidden px-12 py-12 mt-10 bg-white rounded-[50px] shadow-[0px_0px_4px_rgba(0,0,0,0.25)] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-                        <div class="flex gap-5 max-md:flex-col">
-                            <div class="flex flex-col w-[59%] max-md:ml-0 max-md:w-full">
-                                <div class="grow max-md:mt-10 max-md:max-w-full">
-                                    <div class="flex gap-5 max-md:flex-col">
-                                        <div class="flex flex-col w-[57%] max-md:ml-0 max-md:w-full">
-                                            <img loading="lazy"
-                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/853b8b9695acc6f812cd633744ad0dc8af9d47405f45e920cd3281b135f01bd2?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                                                alt="Company logo"
-                                                class="object-contain grow w-full aspect-[0.96] max-md:mt-1.5" />
-                                        </div>
-                                        <div class="flex flex-col ml-5 w-[43%] max-md:ml-0 max-md:w-full">
-                                            <div class="flex flex-col w-full max-md:mt-1.5">
-                                                <div class="flex gap-1.5">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/fbe96fcbd7cf90f38f68126058d9268aed78f391e4baeb289cb4abe92aa01425?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                                                        alt="Award badge 1"
-                                                        class="object-contain shrink-0 max-w-full aspect-[0.72] w-[123px]" />
-                                                    <img loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/8dba2d64f8b6acbbe254a6cb2e7fd4399cb28df80923f596975b8b6d80ef844c?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                                                        alt="Award badge 2"
-                                                        class="object-contain shrink-0 max-w-full aspect-[0.72] w-[123px]" />
-                                                </div>
-                                                <div class="flex gap-1.5 mt-1.5">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/387b2bdc374a0342cc5b33695839c8ef598aa9fd0d41023536c1087d46e86743?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                                                        alt="Award badge 3"
-                                                        class="object-contain shrink-0 max-w-full aspect-[0.72] w-[123px]" />
-                                                    <img loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8b454d6cc12513c8d911ba2a58db85c2a179dd25a10462ba4a7e378515e612c?placeholderIfAbsent=true&apiKey=6897c858e2bd486ba7968bbb3c4ff5ed"
-                                                        alt="Award badge 4"
-                                                        class="object-contain shrink-0 max-w-full aspect-[0.72] w-[123px]" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col ml-5 w-[41%] max-md:ml-0 max-md:w-full">
-                                <div class="flex flex-col self-stretch my-auto w-full max-md:mt-10">
-                                    <h3 class="text-4xl tracking-tight leading-10 text-[#175884] max-md:mr-2.5">
-                                        Book Your Consultation
-                                        <br />
-                                        with Macula Consultant
-                                    </h3>
-                                    <p class="self-start mt-9 text-xl leading-8 text-neutral-700">
-                                        At Macula Consultant, we redefine consultancy through a
-                                        dynamic fusion of innovation, expertise, and strategic vision.
-                                    </p>
-                                    <div class="flex gap-2.5 mt-9">
-                                        <input type="email" name="newsletter" placeholder="Enter your email to subscribe" class="overflow-hidden px-6 py-4 text-lg border-2 border-sky-800 border-solid rounded-[50px] text-neutral-700 w-fit max-md:px-5" required>
-                                        <button type="button"
-                                            class="overflow-hidden px-4 py-5 text-sm leading-none  text-center text-white bg-sky-800 rounded-full max-md:px-5">
-                                            Subcribe Now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="self-center mt-16 text-lg leading-loose text-center text-black max-md:mt-10">
-                        © Macula Consultant . All Rights Reserved 2025.
-                    </p>
-                </div>
-            </div>
-        </div>
+      <div id="footer"></div>
     </div>
  
 </body>

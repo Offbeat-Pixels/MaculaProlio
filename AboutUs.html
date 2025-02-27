@@ -13,89 +13,33 @@
     onload="loadComponent('navbar', 'Navbar.html'); loadComponent('footer', 'Footer.html');"
   >
     <div id="navbar"></div>
-    <!-- 
-  About Section 
-<section class="relative">
-  <img src="assets/AboutImg.png" alt="Business Consulting" class="h-[30vh] w-screen pl-1 object-cover image-mask">
-  <h2 class="text-5xl font-bold absolute inset-0 right-80 flex items-center justify-center text-black ml-[-20px]">
-    About
-  </h2>
-</section>
-
-
-
-  Vision & Values
-  <section class="container mx-auto px-10 py-16">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <img src="vision-image.jpg" alt="Our Vision" class="rounded-lg shadow-lg">
-      <div>
-        <h2 class="text-3xl font-bold">Our Vision</h2>
-        <p class="text-gray-600 mt-2">
-          Enabling businesses to achieve growth and operational excellence by providing them results-driven business &
-          strategic consulting.
-        </p>
+   
+   <section
+      style="background-image: url(assets/BlogBg.png)"
+      class="bg-center bg-cover px-10 py-10 mb-10 h-60"
+    >
+      <div class="text-white items-center text-center">
+        <h1 class="mb-5 text-6xl font-bold max-md:text-6xl max-sm:text-4xl">
+          About Us
+        </h1>
+        <nav
+          aria-label="breadcrumb"
+          class="text-2xl font-[lato] font-bold max-sm:text-3xl"
+        >
+          <ol class="flex justify-center">
+            <li><a href="/" class="text-white">Home</a></li>
+            <li class="mx-2">&gt;</li>
+            <li aria-current="page" class="text-[#194F75]"> About Us</li>
+          </ol>
+        </nav>
       </div>
-    </div>
-
-    <div class="mt-16">
-      <h2 class="text-3xl font-bold text-center">Our Values</h2>
-      <div class="grid grid-cols-4 gap-6 text-center mt-6">
-        <div>
-          <span class="text-3xl">🌿</span>
-          <h3 class="font-bold mt-2">Ethics</h3>
-          <p class="text-gray-600">We like doing things ethically</p>
-        </div>
-        <div>
-          <span class="text-3xl">🎨</span>
-          <h3 class="font-bold mt-2">Creativity</h3>
-          <p class="text-gray-600">Being creative is our way of life</p>
-        </div>
-        <div>
-          <span class="text-3xl">⚡</span>
-          <h3 class="font-bold mt-2">Adaptability</h3>
-          <p class="text-gray-600">We tailor to the needs of customers</p>
-        </div>
-        <div>
-          <span class="text-3xl">🌎</span>
-          <h3 class="font-bold mt-2">Individuality</h3>
-          <p class="text-gray-600">We celebrate diverse perspectives</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  Our Mission
-  <section class="bg-blue-900 text-white py-16">
-    <div class="container mx-auto px-10 text-center">
-      <h2 class="text-3xl font-bold">Our Mission</h2>
-      <div class="grid grid-cols-4 gap-6 mt-8">
-        <div>
-          <h3 class="text-xl font-bold">01.</h3>
-          <p>Empowering Businesses with insights, strategies, and tools.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold">02.</h3>
-          <p>Empowering Businesses with insights, strategies, and tools.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold">03.</h3>
-          <p>Empowering Businesses with insights, strategies, and tools.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold">04.</h3>
-          <p>Empowering Businesses with insights, strategies, and tools.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-    <div class="mx-auto h-full flex flex-col justify-center px-6">
-      <p class="text-5xl font-bold text-center py-10">About Us</p>
+    </section>
+    <div class="mx-auto h-full flex flex-col justify-center px-6"> 
     </div>
     <main class="max-w-7xl mx-auto px-6 h-fit py-16">
       <div class="relative max-w-7xl text-center mb-20">
         <h2 class="text-3xl font-bold mb-2">Our Vision</h2>
-        <p class="font-medium text-gray-600">
+        <p class="font-[lato] text-lg font-medium ">
           Enabling businesses to achieve growth and operational excellence by
           providing them results-driven business & strategic consulting.
         </p>
@@ -127,7 +71,7 @@
               />
             </div>
             <h2 class="text-2xl font-bold mt-4">Empowering Businesses</h2>
-            <p class="text-gray-600 text-lg">
+            <p class="font-[lato] text-lg ">
               To empower businesses of all scales/sizes with insights,
               strategies, and tools.
             </p>
@@ -141,7 +85,7 @@
               />
             </div>
             <h2 class="text-2xl font-bold mt-4">Expert Consultancy</h2>
-            <p class="text-gray-600 text-lg">
+            <p class="font-[lato] text-lg ">
               To provide expert consultancy fostering long-term value for our
               clients.
             </p>
@@ -155,7 +99,7 @@
               />
             </div>
             <h2 class="text-2xl font-bold mt-4">Client-First Approach</h2>
-            <p class="text-gray-600 text-lg">
+            <p class="font-[lato] text-lg ">
               To create a client-first approach where every service is
               personalized, impactful, and results-driven.
             </p>
@@ -169,7 +113,7 @@
               />
             </div>
             <h2 class="text-2xl font-bold mt-4">AI Innovation</h2>
-            <p class="text-gray-600 text-lg">
+            <p class="font-[lato] text-lg ">
               To pioneer Gen AI-enabled products that enhance efficiency,
               innovation, and decision-making for businesses of all sizes.
             </p>
@@ -189,8 +133,8 @@
             alt="Ethics"
             class="h-10 mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-green-700 mb-1">Ethics</h3>
-          <p class="text-gray-600">We like doing things ethically</p>
+          <h3 class="text-2xl font-bold text-[#175884] mb-1">Ethics</h3>
+          <p class="font-[lato] text-lg">We like doing things ethically</p>
         </div>
         <div>
           <img
@@ -198,8 +142,8 @@
             alt="Creativity"
             class="h-10 mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-green-700 mb-1">Creativity</h3>
-          <p class="text-gray-600">Being creative is our way of life</p>
+          <h3 class="text-2xl font-bold text-[#175884] mb-1">Creativity</h3>
+          <p class="font-[lato] text-lg">Being creative is our way of life</p>
         </div>
         <div>
           <img
@@ -207,8 +151,8 @@
             alt="Adaptability"
             class="h-10 mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-green-700 mb-1">Adaptability</h3>
-          <p class="text-gray-600">We tailor to the needs of customers</p>
+          <h3 class="text-2xl font-bold text-[#175884] mb-1">Adaptability</h3>
+          <p class="font-[lato] text-lg">We tailor to the needs of customers</p>
         </div>
         <div>
           <img
@@ -216,13 +160,12 @@
             alt="Individuality"
             class="h-10 mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-green-700 mb-1">Individuality</h3>
-          <p class="text-gray-600">We celebrate diverse perspectives</p>
+          <h3 class="text-2xl font-bold text-[#175884] mb-1">Individuality</h3>
+          <p class="font-[lato] text-lg">We celebrate diverse perspectives</p>
         </div>
       </div>
     </div>
 
-    <div id="footer"></div>
-    Footer loads here
+    <div id="footer"></div> 
   </body>
 </html>
