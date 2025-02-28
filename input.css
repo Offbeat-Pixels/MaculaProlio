@@ -5,3 +5,10 @@
 body {
   font-family: 'Libre Baskerville', serif;
 }
+
+
+@media (max-width: 768px) {
+  .rotate-bg-sm::before {
+    transform: rotate(15deg);
+  }
+}
